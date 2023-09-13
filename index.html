@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Time Until Christmas Eve<</title>
+    <title>Time Until Christmas Eve</title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Time Until Christmas Eve</h1>
-    <h2 class="js-clock"></h2>
+
+    <div class="js-clock">
+      <div class="the-clock">
+        <div class="column">
+          <p><span class="day"></span>days</p>
+        </div>
+        <div class="row">
+          <p><span class="hour"></span>hours</p>
+          <p><span class="min"></span>minutes</p>
+          <p><span class="sec"></span>seconds</p>
+        </div>
+      </div>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>

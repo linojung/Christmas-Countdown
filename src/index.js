@@ -1,5 +1,5 @@
 const clockTitle = document.querySelector(".js-clock");
-const christmas = new Date("December 25, 2023 00:00:00").getTime();
+const christmas = new Date("December 24, 2023 00:00:00").getTime();
 const now = new Date();
 const countDown = function () {
   let today = new Date().getTime();
@@ -11,8 +11,10 @@ const countDown = function () {
     min: Math.floor((dd % (1000 * 60 * 60)) / (1000 * 60)),
     sec: Math.floor((dd % (1000 * 60)) / 1000),
   };
-
-  clockTitle.innerText = `${ddDate.day}days ${ddDate.hr}hours ${ddDate.min}mins ${ddDate.sec}sec`;
+  document.querySelector(".day").innerText = ddDate.day;
+  document.querySelector(".hour").innerText = ddDate.hr;
+  document.querySelector(".min").innerText = ddDate.min;
+  document.querySelector(".sec").innerText = ddDate.sec;
 };
 
 countDown();
