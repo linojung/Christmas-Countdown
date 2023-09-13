@@ -1,2 +1,3 @@
-# Christmas-Countdown
-countdown Javascript practice
+# Christmas-dd
+
+dd Javascript practice
